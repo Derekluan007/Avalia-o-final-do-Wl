@@ -1,16 +1,12 @@
+// Q4: dividir R$ 780000,00 entre 46%, 32% e o restante
 #include <stdio.h>
-
-int main() {
-    double total = 780000.0;
-    double g1, g2, g3;
-
-    g1 = total * 0.46;
-    g2 = total * 0.32;
-    g3 = total - (g1 + g2);
-
-    printf("Primeiro ganhador: R$ %.2lf\n", g1);
-    printf("Segundo ganhador: R$ %.2lf\n", g2);
-    printf("Terceiro ganhador: R$ %.2lf\n", g3);
-
+int main(void){
+    double total = 780000.00;
+    double g1 = total * 0.46;     // 358800.00
+    double g2 = total * 0.32;     // 249600.00
+    double g3 = total - (g1+g2);  // 171600.00
+    printf("Q4: Ganhador 1 = R$ %.2f\n", g1);
+    printf("    Ganhador 2 = R$ %.2f\n", g2);
+    printf("    Ganhador 3 = R$ %.2f\n", g3);
     return 0;
 }
