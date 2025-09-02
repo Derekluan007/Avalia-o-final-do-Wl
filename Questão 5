@@ -1,0 +1,12 @@
+// Q5: converter letra maiúscula em minúscula usando ASCII (ex.: 'J' -> 'j')
+#include <stdio.h>
+int main(void){
+    char maiuscula = 'J';
+    char minuscula;
+    if (maiuscula >= 'A' && maiuscula <= 'Z')
+        minuscula = maiuscula + ('a' - 'A'); // +32 na tabela ASCII
+    else
+        minuscula = maiuscula; // não altera se já for minúscula ou outro símbolo
+    printf("Q5: %c -> %c\n", maiuscula, minuscula); // J -> j
+    return 0;
+}
