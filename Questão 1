@@ -1,14 +1,8 @@
+// Q1: soma dos quadrados de três valores (ex.: 2, -3, 5) -> 4 + 9 + 25 = 38
 #include <stdio.h>
-
-int main() {
-    int a, b, c, soma;
-
-    printf("Digite tres valores: ");
-    scanf("%d %d %d", &a, &b, &c);
-
-    soma = (a * a) + (b * b) + (c * c);
-
-    printf("A soma dos quadrados eh: %d\n", soma);
-
+int main(void){
+    int a = 2, b = -3, c = 5;
+    int soma = a*a + b*b + c*c;
+    printf("Q1: soma dos quadrados = %d\n", soma); // 38
     return 0;
 }
