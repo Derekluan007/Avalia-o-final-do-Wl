@@ -1,15 +1,9 @@
+// Q3: hipotenusa com a=3, b=4 -> 5
 #include <stdio.h>
 #include <math.h>
-
-int main() {
-    double a, b, hipotenusa;
-
-    printf("Digite os dois catetos do triangulo: ");
-    scanf("%lf %lf", &a, &b);
-
-    hipotenusa = sqrt((a * a) + (b * b));
-
-    printf("O valor da hipotenusa eh: %.2lf\n", hipotenusa);
-
+int main(void){
+    double a = 3.0, b = 4.0;
+    double h = sqrt(a*a + b*b);
+    printf("Q3: hipotenusa = %.2f\n", h); // 5.00
     return 0;
 }
